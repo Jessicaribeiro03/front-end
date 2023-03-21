@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import { UserView } from './home/home-user-view';
+import { UserView } from './home/views/home-user-view';
+import LoginView from './login/views/login-view';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UserView />
+    <LoginView />
   </React.StrictMode>
 );
 

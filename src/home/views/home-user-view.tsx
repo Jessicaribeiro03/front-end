@@ -1,6 +1,6 @@
 import React from "react";
 
-export class UserView extends React.Component<Props, State>{
+export class UserView extends React.Component{
     render(){
         return(
                 <div>
