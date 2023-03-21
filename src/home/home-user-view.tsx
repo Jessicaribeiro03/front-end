@@ -1,9 +1,9 @@
 import React from "react";
 
-export class UserView extends React.Component<Props, State>{
+export class UserView extends React.Component{
     render(){
         return(
-                <div>
+                <div className="container-flex">
                     {/* NavBar Hamburger */}
                     <div className="collapse " id="navbarToggleExternalContent">
                         <div className="bg-dark p-4 ">
@@ -19,31 +19,44 @@ export class UserView extends React.Component<Props, State>{
                         </div>
                         </nav>
                         {/* NavBar Hamburger */}
-                        
+                        {/* NavTabs */}
+                        <div className="container-flex pt-5 m-auto">
+                        <ul className="nav nav-pills">
+                                <li className="nav-item">
+                                    <a className="nav-link active" aria-current="page" href="#">Active</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Link</a>
+                                </li>
+                                </ul>
+                                </div>
                         {/* Formularios */}
-                        <ul className="list-group p-5 gap-1">
-                                <li className="list-group-item d-flex  ">
+                        
+                        <div className="container ">
+                        <ul className="list-group p-5 justify-content-between">
+                                <li className="list-group-item d-flex ">
+                                    <input className="form-control" type="text" placeholder="Default input" aria-label="default input example"/>
+                                    <input className="form-check-input m-3" type="checkbox" value="" aria-label="..."/>
+                                   
+                                </li>
+                                <li className="list-group-item d-flex   ">
                                     <input className="form-control m-auto" type="text" placeholder="Default input" aria-label="default input example"/>
-                                    <input className="form-check-input m-5 " type="checkbox" value="" aria-label="..."/>
+                                    <input className="form-check-input m-3 " type="checkbox" value="" aria-label="..."/>
                                    
                                 </li>
                                 <li className="list-group-item d-flex  ">
                                     <input className="form-control m-auto" type="text" placeholder="Default input" aria-label="default input example"/>
-                                    <input className="form-check-input m-5 " type="checkbox" value="" aria-label="..."/>
+                                    <input className="form-check-input m-3 " type="checkbox" value="" aria-label="..."/>
                                    
                                 </li>
                                 <li className="list-group-item d-flex  ">
                                     <input className="form-control m-auto" type="text" placeholder="Default input" aria-label="default input example"/>
-                                    <input className="form-check-input m-5 " type="checkbox" value="" aria-label="..."/>
-                                   
-                                </li>
-                                <li className="list-group-item d-flex  ">
-                                    <input className="form-control m-auto" type="text" placeholder="Default input" aria-label="default input example"/>
-                                    <input className="form-check-input m-5 " type="checkbox" value="" aria-label="..."/>
+                                    <input className="form-check-input m-3 " type="checkbox" value="" aria-label="..."/>
                                    
                                 </li>
                                
-                                </ul>
+                              </ul>
+                              </div>
                                 {/* Formularios */}
                  </div>
         )
