@@ -1,5 +1,4 @@
 import React from "react";
-import { NavTabs, NewTask, TarefasCriadas } from "./style";
 
 export class UserView extends React.Component{
     render(){
@@ -8,85 +7,78 @@ export class UserView extends React.Component{
                     {/* NavBar Hamburger  */}
                     <div className="collapse " id="navbarToggleExternalContent">
                         <div className="bg-dark p-4 ">
-                            <h5 className="text-white h4">Collapsed content</h5>
+                            <h5 className="text-white h4">Perfil</h5>
                             <span className="text-muted">Toggleable via the navbar brand.</span>
                         </div>
                         </div>
                         <nav className="navbar navbar-dark bg-dark">
-                        <div className="container-fluid justify-content-end">
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div className="container-fluid justify-content-start">
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                             </button>
                         </div>
                         </nav>
                         {/* NavBar Hamburger */}
-                        {/* NavTabs */}
-                        <NavTabs >
-                        <ul className="nav nav-tabs" id="myTab" role="tablist">
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-                            </li>
-                        </ul>
-                            <div className="tab-content" id="myTabContent">
-                            <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                            <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                            <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                            </div>
-                            </NavTabs>
-                             {/* NavTabs */}
-                        {/* Formularios */}
                         {/* Adicionar Nova Tarefa */}
-                                <NewTask>
+                           
                                  
                                     
-                                 
+                                <form className="d-flex justify-content-center align-items-center mx-5 my-5">
                                      <div className="form-outline flex-fill">
                                      <input className="form-control " type="text" placeholder="Nova Tarefa... " aria-label="default input example"/>
                                     </div>
                                     <div className="d-grid gap-2 col-1 mx-auto">
                                         <button  className="btn btn-info btn-md mx-2 ">Add</button>
                                     </div>
+                                    </form>
                                 
                                 
-                                
-                                </NewTask>
-
+                          
 
 
                         {/* Adicionar Nova Tarefa */}
-                        
-                        <TarefasCriadas>
-                        <ul className="list-group ">
-                                <li className="list-group-item  ">
-                                    <input className="form-check-input " type="checkbox" value="" aria-label="..."/>
-                                    <input className="form-control " type="text" placeholder="Default input" aria-label="default input example"/>
-                                    {/* Icones */}
-                                    <div className="d-grid gap-1 col-1 mx-auto">
-                                    <button>
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                                    </svg>
-                                    </button>
-                                    <button>
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
-                                    </svg>
-                                    </button>
-                                    </div>
-                                    {/* Icones */}
-                                   
-                                </li>
-                              </ul>
-                              </TarefasCriadas>
-                               
+
+                        <div className="container">
+                            <div className="row">
+                                
+                                    <div className="card d-flex flex-fill">
+                                        <div className="card-header">
+                                        <ul className="nav nav-tabs card-header-tabs my-2" id="listaTarefa" role="tablist">
+                                                <li className="nav-item">
+                                                <a className="nav-link active" href="#description" role="tab" aria-controls="description" aria-selected="true">Todas as tarefas</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                <a className="nav-link"  href="#history" role="tab" aria-controls="history" aria-selected="false">Não concluídas</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                <a className="nav-link" href="#deals" role="tab" aria-controls="deals" aria-selected="false">Concluídas</a>
+                                                </li>
+                                            </ul>
+                                            <div className="tab-content" id="ex1-content">
+                                            <div className="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                                                aria-labelledby="ex1-tab-1">
+                                                <ul className="list-group mb-0">
+                                                <li className="list-group-item d-flex align-items-center border-0 mb-2 rounded">
+                                                    <input className="form-check-input me-2" type="checkbox" value=""  />
+                                                    <span>Ir ao mercado</span>
+                                                </li>
+                                                <li className="list-group-item d-flex align-items-center border-0 mb-2 rounded">
+                                                    <input className="form-check-input me-2" type="checkbox" value=""  />
+                                                   <span>Arrumar a casa</span>
+                                                </li>
+                                                <li className="list-group-item d-flex align-items-center border-0 mb-2 rounded">
+                                                    <input className="form-check-input me-2" type="checkbox" value="" />
+                                                    <span>Passear com o cachorro</span>
+                                                </li>
+                                                </ul>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            
+                            
                  </div>
         )
     };
