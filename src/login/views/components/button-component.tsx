@@ -12,13 +12,13 @@ export default class ButtonComponent extends React.Component<Props>{
         const { type, text } = this.props;
         var colorType;
         if(type === "facebook"){
-            colorType = "red";
-        }else{
             colorType = "#4267B2";
+        }else{
+            colorType = "#DB4437";
         }
         return (
             <ButtonContainer type={colorType}>
-                <Facebook color="white" />
+                {type == "facebook" ? <Facebook color="white" /> : <Google color="white" />}
                 <span>{text}</span>
             </ButtonContainer>
         );
