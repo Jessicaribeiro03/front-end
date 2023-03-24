@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { UserView } from './home/view/home-user-view';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import { UserView } from './home/home-user-view';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
