@@ -1,36 +1,40 @@
 import React from "react";
-import { Container, Stack, Avatar, Paper } from "@mui/material";
-import { LineHr } from "../login/views/style";
 
-export default class UserView extends React.Component{
+import { MDBCard, MDBCardBody, MDBCardImage, MDBTypography, MDBCardText } from "mdb-react-ui-kit";
+import { Button } from "@mui/material";
+import { Container, ContainerContent, ContainerForm } from "./style";
 
-    render(){
-        
-        return(
-            <Container>
+export default class UserView extends React.Component {
 
-                <LineHr />
-                    <h4>Lista de Tarefas</h4>
-                <LineHr />
+  render() {
 
-                <Paper sx={{width: 600, height: 600}}>
-
-                    <Stack direction="row" spacing={2}>
-                        <Avatar alt="Remy Sharp" src="/broken-image.jpg" />
-                    </Stack>
-
-                    <form>
-                        <input type="text" name="Usuário" placeholder="Usuário" />
-                        <input type="text" name="Senha" placeholder="Senha" />
-                        <button type="submit">Entrar</button>
-                    </form>
-                </Paper>   
-
-            </Container>
-        )
+    return (
 
 
-    }
+      <Container className="vh-100">
+        <ContainerContent>
+          <MDBCard style={{ borderRadius: '15px', width: 450 }}>
+            <MDBCardBody className="text-center">
+              <ContainerForm>
+                <div className="mt-3 mb-4">
+                  <MDBCardImage src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+                    className="rounded-circle" fluid style={{ width: '100px' }} />
+                </div>
+                
+                <MDBTypography tag="h4" className="mb-3">LOGIN</MDBTypography>
+                <input className="mb-2" type="text" name="Nome do usuário" placeholder="Nome do usuário" />
+                <input className="mb-2" type="text" name="Sobrenome" placeholder="Sobrenome" />
+                <Button variant="contained" disableElevation>Entrar</Button>
+
+              </ContainerForm>
+            </MDBCardBody>
+          </MDBCard>
+        </ContainerContent>
+      </Container>
+    )
+
+
+  }
 
 
 }

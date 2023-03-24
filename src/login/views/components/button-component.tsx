@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonContainer } from "../style";
 import { Google, Facebook } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 interface Props{
     type: string;
@@ -17,10 +18,14 @@ export default class ButtonComponent extends React.Component<Props>{
             colorType = "#DB4437";
         }
         return (
-            <ButtonContainer type={colorType}>
-                {type == "facebook" ? <Facebook color="white" /> : <Google color="white" />}
-                <span>{text}</span>
-            </ButtonContainer>
+            <Link to="/home/"> 
+                <ButtonContainer type={colorType}>
+                    {type == "facebook" ? <Facebook color="white" /> : <Google color="white" />}
+                    <span>{text}</span>
+
+                </ButtonContainer>
+            </Link>
+
         );
     }
     

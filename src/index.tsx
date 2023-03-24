@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import { UserView } from './home/views/home-user-view';
+
 import LoginView from './login/views/login-view';
+import UserView from './user/user-view';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,8 @@ root.render(
     <Routes>
       <Route path="/" element={<LoginView />} />
       <Route path="/user" element={<UserView />} />
+      <Route path="/home" element={<UserView/>} />
+
     </Routes>
   </BrowserRouter>
   
