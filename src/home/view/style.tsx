@@ -60,6 +60,12 @@ export const LIST = styled.li`
     export const Icons = styled.button`
     display: inline;
     
+    background-color:#3C345C;
+    color:white;
+
+    border-radius: 60%;
+    border: 1px solid grey;
+    padding: 5%;
    
     
     `
