@@ -32,12 +32,18 @@ export const Button = styled.button`
   cursor: pointer;
 `
 export const Text = styled.input`
-  border: 2px solid #000;
+
+border: 2px solid #000;
 `;
 export const TaskCount = styled.span`
   margin: 10px;
 `;
 export const Tasks = styled.div`
+
+
+
+
+
 `;
 export const LIST = styled.li`
     listStyle:"none";
@@ -46,13 +52,16 @@ export const LIST = styled.li`
     
     export const NewTask = styled.div`
     display: flex-wrap;
+    width: 1000px;
     justify-content: space-envely;
     
     
     `
-    export const Icons = styled.div`
-      display: flex-;
-      justify-content: space-envely;
-
+    export const Icons = styled.button`
+    display: inline;
+    
+   
     
     `
+    
+      
