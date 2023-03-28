@@ -7,7 +7,7 @@ import { Container,  ContainerTask, Button, Text, Tasks, TaskCount, LIST, NewTas
 
 
 
-export class UserView extends React.Component{
+export class HomeUserView extends React.Component{
     
     
     render(){

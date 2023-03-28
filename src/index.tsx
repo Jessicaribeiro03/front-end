@@ -5,7 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import LoginView from './login/views/login-view';
-import UserView from './user/user-view';
+import UserView from './profile/user-view';
+import { HomeUserView } from './home/view/home-user-view';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,7 +17,8 @@ root.render(
     <Routes>
       <Route path="/" element={<LoginView />} />
       <Route path="/user" element={<UserView />} />
-      <Route path="/home" element={<UserView/>} />
+      <Route path="/home" element={<HomeUserView/>} />
+      
       
     </Routes>
   </BrowserRouter>
