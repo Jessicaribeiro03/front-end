@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #b3e5fc;
+    background-color: #F4F4F4;
 `
 
 export const ContainerContent = styled.div`
@@ -16,7 +16,7 @@ export const ContainerContent = styled.div`
     height:  100%;
 
     img{
-        width: 100px;   
+        width: 150px;   
         margin-bottom: 2rem;     
     }
 `
@@ -62,4 +62,10 @@ export const ButtonContainer = styled.div<Props>`
     }    
 `
 
+export const handleOpenUserMenu = styled.div`
+    width: 150px; 
+    margin-bottom: 2rem
+
+
+`
 

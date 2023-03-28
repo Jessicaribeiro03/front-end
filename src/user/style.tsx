@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div `
-    background-color: #D5D4D4;
+    background-color: #F4F4F4;
 `
 
 export const ContainerContent = styled.div`
@@ -23,7 +23,7 @@ export const ContainerForm = styled.div`
 
 
 export const Stack= styled.div`
-    padding-left: 1rem;
+    padding-left: 2rem;
 
 `
 export const UserView= styled.div`

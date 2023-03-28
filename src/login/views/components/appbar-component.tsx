@@ -6,10 +6,22 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { createTheme, ThemeProvider, Tooltip, Avatar } from '@mui/material';
+import { handleOpenUserMenu } from '../style';
 
 export default function ButtonAppBar() {
+
+
+  const darkTheme = createTheme({
+    palette: {         
+      primary: {
+        main: '#3C345C',
+      },
+    },
+  });
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <ThemeProvider theme={darkTheme}>
       <AppBar  position="static">
           
             <Toolbar>
@@ -21,17 +33,20 @@ export default function ButtonAppBar() {
                 color="inherit"
                 aria-label="menu"
                 sx={{ mr: 2 }}
+
+                  
+                  
               >
               <MenuIcon /> 
 
               </IconButton>
-            
-             
+
+
             </Toolbar>
       </AppBar>
+      </ThemeProvider>
     </Box>
     
   );
 }
 
-//inherit
