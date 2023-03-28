@@ -1,4 +1,6 @@
 import {useState} from "react"
+import React from "react";
+import { HomeUserView } from "../view/home-user-view";
 
 export const [input, setInput] = useState("");
 export const [completedTaskCount, setCompletedTaskCount] = useState(0);
@@ -36,3 +38,9 @@ export const handleClick = () => {
       });
       setTodoList(list);
 };
+  export default function HomeController (){
+      return (
+              <HomeUserView/> 
+      )
+
+  } 

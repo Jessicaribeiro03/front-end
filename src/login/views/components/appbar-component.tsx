@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme, ThemeProvider, Tooltip, Avatar } from '@mui/material';
-import { handleOpenUserMenu } from '../style';
+import { handleOpenUserMenu } from '../view/style';
 
 export default function ButtonAppBar() {
 

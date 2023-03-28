@@ -1,6 +1,6 @@
 import React from "react";
 import { IconsFolder } from "../../assets/icons";
-import NavBarComponent from "../components/home-components";
+import NavBarComponent from "../components/navbar-component";
 import { Container,  ContainerTask, Button, Text, Tasks, TaskCount, LIST, NewTask } from "./style";
 
 

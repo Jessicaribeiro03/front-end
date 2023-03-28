@@ -3,8 +3,8 @@ import React from "react";
 import { MDBCard, MDBCardBody, MDBCardImage, MDBTypography, MDBCardText } from "mdb-react-ui-kit";
 import { Button, Paper } from "@mui/material";
 import { Container, ContainerContent, ContainerForm } from "./style";
-import { LineHr } from "../login/views/style";
-import ButtonAppBar from "../login/views/components/appbar-component";
+import { LineHr } from "../../login/views/view/style";
+import ButtonAppBar from "../../login/views/components/appbar-component";
 
 
 export default class UserView extends React.Component {
