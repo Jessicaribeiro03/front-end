@@ -5,7 +5,7 @@ import { Google } from 'react-bootstrap-icons';
 import logo from '../../assets/logo.png';
 import ButtonComponent from "../components/buttons-component";
 import ButtonAppBar from "../components/appbar-component";
-import logo3 from '../../assets/logo3.jpg'
+import logo2 from '../../assets/logo3.jpg'
 import SocialButton from "../components/social-button";
 
 
@@ -26,7 +26,7 @@ export default class LoginView extends React.Component<Props>{
                 <Container className="vh-100">
                     <Paper sx={{ width: 600, height: 600 }}>
                         <ContainerContent>
-                            <img src={logo3} alt="" />
+                            <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbyFZmEJxWF7fBRwOEnsOF7AV_9FeqBOPUmw&usqp=CAU`} alt="" />
                             <LineHr />
                             <h4>Lista de Tarefas</h4>
                             <LineHr />

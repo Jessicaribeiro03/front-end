@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-import LoginView from './login/views/view/login-view';
-import UserView from './profile/view/user-view';
-import { HomeUserView } from './home/view/home-user-view';
 import HomeController from './home/controller/home-controler';
 import LoginControler from './login/views/controller/login-controller';
-import UserController from './profile/controlller/profile-controller';
+
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const root = ReactDOM.createRoot(
@@ -21,7 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<LoginControler />} />
       <Route path="/login" element={<LoginControler />} />
-      <Route path="/user" element={<UserController />} />
+    
       <Route path="/home" element={<HomeController/>} />
       
       
