@@ -12,7 +12,7 @@ export const ContainerContent = styled.div`
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;  
-    margin-top: 5rem;      
+    margin-top: 3.5rem;      
     height:  100%;
 
     img{
@@ -21,15 +21,16 @@ export const ContainerContent = styled.div`
     }
 `
 
-export const LineHr = styled.div`
-    height: 2px;
-    width:80%;
-    background-color: black;
+export const Box = styled.div`
+box-sizing:border-box;
+padding: 50px;
+border: 1px solid red;
+
     
 `
 
-interface Props{
-    type: string;    
+interface Props {
+    type: string;
 }
 
 export const ButtonContainer = styled.div<Props>`

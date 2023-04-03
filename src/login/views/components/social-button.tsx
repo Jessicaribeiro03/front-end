@@ -34,7 +34,7 @@ export default function SocialButton(props: Props) {
     if (type === "facebook") {
         colorType = "#4267B2";
     } else {
-        colorType = "#DB4437";
+        colorType = "#5c508d";
     }
     return (
         <>

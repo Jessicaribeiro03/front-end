@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
                   
                   
               >
-              <MenuIcon /> 
+              
 
               </IconButton>
 

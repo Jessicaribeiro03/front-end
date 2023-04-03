@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar } from "../view/style";
+import { NavBar } from "../home/view/style";
 
 export default function NavBarComponent(){
     return(

@@ -1,11 +1,11 @@
 import {useState} from "react"
 import React from "react";
-import { HomeUserView } from "../view/home-user-view";
+import { HomeView } from "../view/home-user-view";
 
 
   export default function HomeController (){
       return (
-              <HomeUserView/> 
+              <HomeView/> 
       )
 
   } 
