@@ -1,6 +1,5 @@
 import React from "react";
 import { NavBar } from "../home/view/style";
-import { profile } from "console";
 import UserModel from "../profile/model/user-model";
 
 
@@ -40,7 +39,8 @@ export default class NavBarComponent extends React.Component<Props> {
                                 aria-expanded="false"
                             >
                                 <img
-                                    src={user !== undefined ? user.profileImageUrl : profile}
+                                    src={this.props.user !== undefined ? this.props.user.profileImageUrl : 'https://qph.cf2.quoracdn.net/main-qimg-2b21b9dd05c757fe30231fac65b504dd'}
+                                    
 
                                     //  apontar uma image invalida par ao : profile
                                     className="rounded-circle"

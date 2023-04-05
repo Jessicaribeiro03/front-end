@@ -16,7 +16,7 @@ root.render(
     <HashRouter>
       <Routes>
 
-        <Route path="/" element={<HomeController />} />
+        <Route path="/" element={<ProfileController />} />
         <Route path="/login" element={<LoginController />} />
         <Route path="/profile" element={<ProfileController />} />
         <Route path="/home" element={<HomeController />} />
