@@ -5,6 +5,7 @@ import { auth } from "../../models/service/login-service";
 import jwtDecode from "jwt-decode";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
+import getUserFromCookies from "../../../shared/utils/get-user-from-cookies-util";
 
 
 export default function LoginController() {
@@ -31,7 +32,7 @@ export default function LoginController() {
     }
 
     return (
-        <LoginView sendAuthCode={sendAuthCode} />
+        <LoginView user={getUserFromCookies()} sendAuthCode={sendAuthCode} />
 
     )
 }

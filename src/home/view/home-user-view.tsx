@@ -4,16 +4,19 @@ import NavBarComponent from "../../components/navbar-component";
 import { Container,  ContainerTask, Button, Text, Tasks, TaskCount, LIST, NewTask } from "./style";
 
 
+interface Props {
+  
+    user?: UserModel | undefined; 
+}
 
 
-
-export class HomeView extends React.Component{
+export class HomeView extends React.Component<Props>{
     
     
     render(){
         return(
             <Container>
-                   <NavBarComponent/>
+                   <NavBarComponent user={this.props.user}/>
             <ContainerTask>
                 <div>
                  <NewTask>
