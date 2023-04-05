@@ -1,5 +1,12 @@
 import React from "react";
 import { NavBar } from "../home/view/style";
+import { profile } from "console";
+
+
+interface Props {
+  
+    user?: UserModel | undefined; 
+}
 
 export default function NavBarComponent(){
     return(
@@ -26,7 +33,8 @@ export default function NavBarComponent(){
                      aria-expanded="false"
                      >
                          <img
-                             src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
+                             src={user !== undefined ? user.profileImageUrl : profile} 
+                            //  apontar uma image invalida par ao : profile
                              className="rounded-circle"
                              height="45"
                              alt="Avatar"

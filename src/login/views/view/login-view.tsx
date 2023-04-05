@@ -11,6 +11,7 @@ import SocialButton from "../components/social-button";
 
 interface Props {
     sendAuthCode: any;
+    user?: UserModel | undefined; 
 }
 
 
