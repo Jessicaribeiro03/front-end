@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-
 import HomeController from './home/controller/home-controler';
 import LoginController from './login/views/controller/login-controller';
-
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import ProfileController from './profile/controler/profile-controler';
 
@@ -18,7 +16,7 @@ root.render(
     <HashRouter>
       <Routes>
 
-        <Route path="/" element={<LoginController />} />
+        <Route path="/" element={<HomeController />} />
         <Route path="/login" element={<LoginController />} />
         <Route path="/profile" element={<ProfileController />} />
         <Route path="/home" element={<HomeController />} />

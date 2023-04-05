@@ -1,5 +1,11 @@
-export default function UserModel(){
-   user.id: string;
+
+export default class UserModel{
+   id: string;
+   firstName: string;
+   lastName: string;
+   email: string;
+   birthday: number;
+   profileImageUrl: string;
    
 
 }

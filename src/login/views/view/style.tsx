@@ -5,25 +5,43 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #F4F4F4;
+    
 `
 
 export const ContainerContent = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;  
-    margin-top: 3.5rem;      
-    height:  100%;
+    justify-content: space-between;
+    flex-direction: row;  
+    padding-top: 70px;
+    margin: 70px;     
+ 
+    
+    
 
     img{
         width: 150px;   
-        margin-bottom: 2rem;     
+        margin-bottom: 2rem;
+        border-radius:50%; 
+            
+    }
+    hr{
+        border-left: 3px;
+        border-style: solid;
+        border-color: black;    
+        height: 460px;
+        opacity:50%;
+        
+
+            position:absolute;
+            left: 49%;
+
     }
 `
 
 export const Box = styled.div`
 box-sizing:border-box;
-padding: 50px;
+padding: 40px;
 border: 1px solid red;
 
     

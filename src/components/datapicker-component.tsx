@@ -8,7 +8,7 @@ class BootstrapDatePickerComponent extends React.Component{
         return(
             <div>
                 <div className="col">
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                         <label.Group controlId="dob">
                             <label>Data de Nascimento</label>
                             <label.Control type="date" name="dob" placeholder="Date of Birth" />
