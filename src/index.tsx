@@ -16,10 +16,11 @@ root.render(
     <HashRouter>
       <Routes>
 
-        <Route path="/" element={<ProfileController />} />
+        <Route path="/" element={<LoginController />} />
         <Route path="/login" element={<LoginController />} />
-        <Route path="/profile" element={<ProfileController />} />
         <Route path="/home" element={<HomeController />} />
+        <Route path="/profile" element={<ProfileController />} />
+        
 
 
       </Routes>

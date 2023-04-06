@@ -1,6 +1,8 @@
 import React from "react";
 import { NavBar } from "../home/view/style";
 import UserModel from "../profile/model/user-model";
+import profile1 from "../assets/profile1.jpg";
+
 
 
 
@@ -39,12 +41,12 @@ export default class NavBarComponent extends React.Component<Props> {
                                 aria-expanded="false"
                             >
                                 <img
-                                    src={this.props.user !== undefined ? this.props.user.profileImageUrl : 'https://qph.cf2.quoracdn.net/main-qimg-2b21b9dd05c757fe30231fac65b504dd'}
+                                    src={this.props.user !== undefined ? this.props.user.profileImageUrl : profile1}
                                     
 
                                     //  apontar uma image invalida par ao : profile
                                     className="rounded-circle"
-                                    height="45"
+                                    height="50"
                                     alt="Avatar"
                                     loading="lazy"
                                 />

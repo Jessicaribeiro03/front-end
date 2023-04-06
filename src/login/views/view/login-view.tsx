@@ -49,7 +49,3 @@ export default class LoginView extends React.Component<Props>{
 }
 
 
-interface Props {
-
-    sendAuthCode: any;
-}
