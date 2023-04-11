@@ -1,21 +1,21 @@
-export default class TaskEntity{
+export default class TaskEntity {
 
-  
+
     id: number;
 
-  
+
     title: string;
 
-   
+
     description: string;
 
 
-    creationDate: number; 
+    creationDate: number;
 
 
     status: Boolean;
 
-    
+
 
 
 }
