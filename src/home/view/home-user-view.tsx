@@ -3,18 +3,20 @@ import React from "react";
 import { IconsFolder } from "../../assets/icons";
 import NavBarComponent from "../../components/navbar-component";
 import UserModel from "../../profile/model/user-model";
+import TaskEntity from "../../task/taskEntity";
 import { Container, ContainerTask, Button, Tasks, NewTask, ButtonIcon } from "./style";
 
 
 interface Props {
 
     user?: UserModel | undefined;
+    handleChange: any;
 }
 
 interface Props{
     tasks: TaskEntity[],
     task : string;
-    handleChange: any,
+   
 }
 
 
@@ -37,7 +39,7 @@ export class HomeView extends React.Component<Props>{
                                     <div className="col-auto">
                                     </div>
                                     <div className="col-11">
-                                        <input name="novaTarefa" id="novaTarefa" value={task} onChange={this.props.handleChange} placeholder="Nova tarefa..." />
+                                        <input name="novaTarefa" id="novaTarefa"  onChange={this.props.handleChange} placeholder="Nova tarefa..." />
                                     </div>
                                     <div className="col-auto">
                                         <Button type="submit" className="btn" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi bi-plus-square-fill" viewBox="0 0 16 16">
