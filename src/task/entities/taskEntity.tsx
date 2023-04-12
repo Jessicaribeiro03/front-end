@@ -1,4 +1,4 @@
-export default class TaskEntity {
+export class TaskEntity {
 
 
     id: number;
@@ -15,7 +15,12 @@ export default class TaskEntity {
 
     status: Boolean;
 
+    user: User;
+  userId: any;
+    
 
 
-
+}
+export class User{
+    id: number;
 }

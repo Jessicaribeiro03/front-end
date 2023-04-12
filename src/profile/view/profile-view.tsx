@@ -19,7 +19,7 @@ export class ProfileView extends React.Component<Props> {
                 <NavBarComponent />
                 <ImageBox>
                 <img
-                    src={this.props.user !== undefined ? this.props.user.profileImageUrl : profile1}
+                    src={this.props.user !== undefined ? this.props.user.profileImageUrl : 'https://png.pngitem.com/pimgs/s/445-4457103_no-profile-picture-jpg-hd-png-download.png'}
                     //  apontar uma image invalida par ao : profile
                     className="rounded-circle"
                     height="150"

@@ -18,7 +18,7 @@ root.render(
 
         <Route path="/" element={<LoginController />} />
         <Route path="/login" element={<LoginController />} />
-        <Route path="/home" element={<HomeController  />} />
+        <Route path="/home" element={<HomeController />} />
         <Route path="/profile" element={<ProfileController />} />
         
 

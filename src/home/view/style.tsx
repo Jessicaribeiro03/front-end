@@ -56,6 +56,7 @@ justify-content: space-envely;
 
 
 
+
 `;
 export const LIST = styled.li`
     listStyle:"none";
@@ -63,11 +64,11 @@ export const LIST = styled.li`
     `;
 
 export const NewTask = styled.div`
-    display: inline;
-    margin:auto;
-    
-    
-    
+display:flex;
+background:red;
+margin:50px;
+
+
     
     
     `
