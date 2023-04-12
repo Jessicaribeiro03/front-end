@@ -7,8 +7,6 @@ import styled from "styled-components";
 export const Container = styled.div`
 display:block;
 
-
-
 `
 export const NavBar = styled.nav`
 background-color: #3C345C;
@@ -17,12 +15,11 @@ img{
   width:60px;
 }
 `
+
 export const ContainerTask = styled.div`
 display: flex;
 align-items: center;
 flex-direction: column;
-
-
 
 `
 export const Button = styled.button`

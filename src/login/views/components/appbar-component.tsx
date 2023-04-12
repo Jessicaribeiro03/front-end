@@ -15,7 +15,7 @@ export default function ButtonAppBar() {
   const darkTheme = createTheme({
     palette: {         
       primary: {
-        main: '#3C345C',
+        main: '#d81b60',
       },
     },
   });
