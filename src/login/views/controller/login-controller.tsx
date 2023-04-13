@@ -18,7 +18,7 @@ export default function LoginController() {
         const tokenDecoded = jwtDecode(response['token']);
 
         Cookies.set(
-            'acess_token',
+            'access_token',
             response['token'],
             { expires: 1 }
         );

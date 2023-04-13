@@ -1,9 +1,9 @@
-import React from "react";
+
 import BootstrapDatePickerComponent from "../../components/datapicker-component";
 import NavBarComponent from "../../components/navbar-component";
-import profile1 from "../assets/profile1.jpg";
 import UserModel from "../model/user-model";
 import { Container, Forms, Button, ImageBox } from "./style";
+import React from "react";
 
 
 interface Props {
@@ -11,8 +11,11 @@ interface Props {
     user?: UserModel | undefined;
 }
 
+interface State{
 
-export class ProfileView extends React.Component<Props> {
+}
+
+export class ProfileView extends React.Component<Props, State> {
     render() {
         return (
             <Container>

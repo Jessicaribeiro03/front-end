@@ -3,8 +3,9 @@ import React from "react";
 
 import getUserFromCookies from "../../shared/utils/get-user-from-cookies-util";
 import { HomeView } from "../view/home-user-view";
-import { TaskEntity } from "../../task/entities/taskEntity";
+import { TaskEntity, User } from "../../task/entities/taskEntity";
 import CreateTaskService from "../../task/models/services/create-task-service";
+import getTasksService from "../../task/models/services/get-task-service";
 
 
 
@@ -34,9 +35,10 @@ export default class HomeController extends React.Component<Props, State>{
     this.setState({ [event.target.name]: event.target.value } as Pick<State, keyof State>);
   }
 
-  componentDidMout(): void {
-    const user = getUserFromCookies();
-    this.setState({ userId: user.id })
+  componentDidMount(): void {
+    const user = getUserFromCookies();    
+    this.setState({ userId: user.id });
+    this.getTasks(user.id);
 
   }
 
@@ -51,15 +53,19 @@ export default class HomeController extends React.Component<Props, State>{
     newTask.status = false;
     newTask.creationDate = date;
     newTask.description = task;
-    newTask.userId = userId;
 
+    var user = new User();
+    user.id = userId;
+    newTask.user = user;
     const createdTask = await CreateTaskService(newTask);
     tasks.push(createdTask);
-    this.setState({ tasks: tasks, task: '' })
+    this.setState({ tasks: tasks, task: '' });
+  }
 
-
-
-
+  async getTasks(userId: number): Promise<void> {
+    const tasks = await getTasksService(userId);
+    console.log('Tarefas', tasks);
+    this.setState({tasks: tasks});
   }
 
 

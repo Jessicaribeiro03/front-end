@@ -1,26 +1,13 @@
 export class TaskEntity {
 
 
-    id: number;
-
-
-    title: string;
-
-
-    description: string;
-
-
-    creationDate: number;
-
-
-    status: Boolean;
-
-    user: User;
-  userId: any;
-    
-
+  id: number;
+  description: string;
+  creationDate: number;
+  status: Boolean;
+  user: User;
 
 }
-export class User{
-    id: number;
+export class User {
+  id: number;
 }

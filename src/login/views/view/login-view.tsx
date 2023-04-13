@@ -31,7 +31,7 @@ export default class LoginView extends React.Component<Props>{
                             <a href="https://ibb.co/R6mgmsr">
                                 <img src="https://media.istockphoto.com/id/1227329042/pt/vetorial/to-do-list-icon-in-comic-style-document-checklist-cartoon-vector-illustration-on-white.jpg?s=170667a&w=0&k=20&c=AmzaYXXJxLx89o1_nwu0ySKdZMEoHphuo0gqPTR0SqE=" alt="Things" />
                             </a>
-                            <hr> tHINGS </hr>
+                            
                             
                             
 

@@ -1,10 +1,9 @@
 import jwtDecode from "jwt-decode";
 import Cookies from "js-cookie"
-
 import UserModel from "../../profile/model/user-model";
 
 export default function getUserFromCookies(): UserModel | undefined {
-    const token = Cookies.get('acess_token');
+    const token = Cookies.get('access_token');
 
     if (token !== undefined) {
         const decodedToken = jwtDecode(token);
@@ -23,5 +22,4 @@ export default function getUserFromCookies(): UserModel | undefined {
     } else {
         return undefined;
     }
-
 }
