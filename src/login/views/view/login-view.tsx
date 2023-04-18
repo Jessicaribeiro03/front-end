@@ -28,8 +28,9 @@ export default class LoginView extends React.Component<Props>{
                     <Paper sx={{ width: 600, height: 460 }}>
                         <ContainerContent>
                         
-                            <a href="https://ibb.co/R6mgmsr">
-                                <img src="https://media.istockphoto.com/id/1227329042/pt/vetorial/to-do-list-icon-in-comic-style-document-checklist-cartoon-vector-illustration-on-white.jpg?s=170667a&w=0&k=20&c=AmzaYXXJxLx89o1_nwu0ySKdZMEoHphuo0gqPTR0SqE=" alt="Things" />
+                            <a >
+                                <h2>Lista de Tarefa</h2>
+                                <img src="https://estudareaprender.com/wp-content/uploads/listas-de-tarefas-significado-1024x576.jpeg" alt="Things" />
                             </a>
                             
                             

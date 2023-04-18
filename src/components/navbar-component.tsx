@@ -21,11 +21,11 @@ export default class NavBarComponent extends React.Component<Props> {
                 <div className="container-fluid">
 
                     <a className="navbar-brand text-white" href="https://ibb.co/R6mgmsr">
-                        <img src="https://i.ibb.co/R6mgmsr/Daily-Tasks.jpg" alt="Daily-Tasks" />
+                        <img src="https://estudareaprender.com/wp-content/uploads/listas-de-tarefas-significado-1024x576.jpeg" />
                     </a>
 
                     <div className="text-white">
-                        <h2>Daily Tasks</h2>
+                        <h2>Lista de Tarefa</h2>
                     </div>
 
                     <ul className="navbar-nav d-flex flex-row me-1 text-white">

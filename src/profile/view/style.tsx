@@ -7,7 +7,7 @@ display:block;
 
 `
 export const NavBar = styled.nav`
-background-color: #3C345C;
+background-color: #4a148c;
 text-color: white;
 `
 export const Forms= styled.div`

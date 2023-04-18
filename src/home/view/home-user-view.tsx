@@ -8,27 +8,21 @@ import { TaskEntity } from "../../task/entities/taskEntity";
 
 
 interface Props {
-
     user?: UserModel | undefined;
     handleChange: any;
     handleSubmit: any;
-
-
-
+    tasks: TaskEntity[];
 }
+
 interface State {
-    tasks: TaskEntity[],
     task: string;
 }
 
 
-
-
-
 export class HomeView extends React.Component<Props>{
 
-
     render() {
+        const { tasks } = this.props;
         return (
             <Container>
                 <NavBarComponent user={this.props.user} />
@@ -61,13 +55,17 @@ export class HomeView extends React.Component<Props>{
                                     <h5>Minhas Tarefas</h5>
                                 </div>
                                 <div className="card-body">
-                                    <div className="input-group-text">
-                                        <input className="form-check-input " type="checkbox" value="" aria-label="Checkbox for following text input" />
-                                        <input type="text" className="form-control mx-3" aria-label="Text input with checkbox" />
-                                        <IconsFolder />
-
-
-                                    </div>
+                                    {
+                                        tasks.map((task) => {
+                                            return (
+                                                <div className="input-group-text">
+                                                    <input className="form-check-input " type="checkbox" value="" aria-label="Checkbox for following text input" />
+                                                    <span className="form-control mx-3">{task.description}</span>
+                                                    <IconsFolder />
+                                                </div>
+                                            );
+                                        })
+                                    }
                                 </div>
                             </div>
                         </Tasks>
@@ -78,4 +76,13 @@ export class HomeView extends React.Component<Props>{
             </Container>
         )
     }
+
+
+   // private handleDeleteConfirmDialog = () => {
+       // this.props.handleDeleteTask(this.state.taskToWork.id)
+        //this.setState({dialogUpdateOpen: false, taskToWork});
+
+    }
+
+    
 }

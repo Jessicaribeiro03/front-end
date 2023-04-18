@@ -4,9 +4,6 @@ export async function auth(authCode: string): Promise<any>{
     headers: {
         "Access-Control-Allow-Origin" : "*"
     }
-       
-
-
 });
 
 return response.json(); 

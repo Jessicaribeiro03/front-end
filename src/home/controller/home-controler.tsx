@@ -6,6 +6,7 @@ import { HomeView } from "../view/home-user-view";
 import { TaskEntity, User } from "../../task/entities/taskEntity";
 import CreateTaskService from "../../task/models/services/create-task-service";
 import getTasksService from "../../task/models/services/get-task-service";
+import { DeleteTaskService } from "../../task/models/services/delete-task-service";
 
 
 
@@ -21,8 +22,6 @@ interface Props {
 
 }
 
-
-
 export default class HomeController extends React.Component<Props, State>{
 
   constructor(props: Props) {
@@ -36,7 +35,7 @@ export default class HomeController extends React.Component<Props, State>{
   }
 
   componentDidMount(): void {
-    const user = getUserFromCookies();    
+    const user = getUserFromCookies();
     this.setState({ userId: user.id });
     this.getTasks(user.id);
 
@@ -65,8 +64,25 @@ export default class HomeController extends React.Component<Props, State>{
   async getTasks(userId: number): Promise<void> {
     const tasks = await getTasksService(userId);
     console.log('Tarefas', tasks);
-    this.setState({tasks: tasks});
+    this.setState({ tasks: tasks });
   }
+
+
+  handleDeleteTask = async(taskId) =>{
+    const deleteResult = await DeleteTaskService (taskId);
+    this.getTasks({userId: user.id});
+    this.getTasks(user.id);
+
+    if(deleteResult === 200){
+      this.getTasks();
+    }else {
+      alert('Ocorreu um erro ao excluir a tarefa');
+    }
+
+    
+  }
+
+ 
 
 
   render() {
@@ -76,7 +92,10 @@ export default class HomeController extends React.Component<Props, State>{
       <HomeView
         handleChange={this.handleChange}
         handleSubmit={this.handleSubmit}
-        user={getUserFromCookies()} />
+        user={getUserFromCookies()}
+        tasks={this.state.tasks}
+
+      />
 
     )
   }
